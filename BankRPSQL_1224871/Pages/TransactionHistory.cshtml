@@ -1,0 +1,30 @@
+﻿@page
+@model BankRPSQL_1224871.Pages.TransactionHistoryModel
+@{
+}
+<h2>Transaction History</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Transaction Date</th>
+            <th>Checking AcctNum</th>
+            <th>Saving AcctNum</th>
+            <th>Amount</th>
+            <th>Transaction Fee</th>
+            <th>Transaction Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.TList)
+        {
+            <tr>
+                <td>@item.TransactionDate</td>
+                <td>@item.CheckingAccountNumber</td>
+                <td>@item.SavingAccountNumber</td>
+                <td>@item.Amount</td>
+                <td>@item.TransactionFee</td>
+                <td>@item.TransactionTypeName</td>
+            </tr>
+        }
+    </tbody>
+</table>

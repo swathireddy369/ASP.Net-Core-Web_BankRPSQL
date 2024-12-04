@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BankRPSQL_1224871.props" />
+</Project>

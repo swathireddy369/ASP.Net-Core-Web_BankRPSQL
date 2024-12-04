@@ -1,0 +1,29 @@
+﻿@page
+@model BankRPSQL_1224871.Pages.XferCToSModel
+@{
+    <h1>Xfer Checking To Saving</h1>
+    <form method="post">
+        <table class="table">
+            <tr>
+                <td>Checking balance</td>
+                <td>Saving balance</td>
+            </tr>
+            <tr>
+                <td>@Model.CheckingBalance</td>
+                <td>@Model.SavingBalance</td>
+            </tr>
+            <tr>
+                <td>Transfer Amount</td>
+                <td><input asp-for="TransferAmount" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Transfer" class="btn-success" />
+                </td>
+            </tr>
+        </table>
+        <div>@Model.Message</div>
+    </form>
+
+}
